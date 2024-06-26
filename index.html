@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- viewport -->
+<html lang="en_US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Заголовок для вкладки браузера и текст ссылки в поисковой выдаче (около 80 знаков)</title>
+        <meta name="description" content="Описание, видно в поисковой выдачеи под ссылкой (около 200 знаков)">
+        <!-- отключаем возможность менять масштаб на мобильных устройствах -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- подключаем CSS-файл со стилями -->
+        <link rel="stylesheet" href="./tile.css" type="text/css">
+    </head>
+    <body class="flex">
+        <button class="start">СТАРТ</button>
+
+        <div id="game-container">
+            <div id="info">
+              <span class="info-span">Вопрос <span id="q-number"></span> из <span id="q-all"></span></span>
+              <span class="info-span">Осталось <span id="q-timer"></span> секунд</span>
+            </div>
+            <div class="question"></div>
+            <div class="flex">
+              <div class="ans" id="ans1">1. <span></span></div>
+              <div class="ans" id="ans2">2. <span></span></div>
+              <div class="ans" id="ans3">3. <span></span></div>
+              <div class="ans" id="ans4">4. <span></span></div>
+            </div>
+        </div>
+
+        <div id="result">
+            <div>Вы набрали <span id="score"></span></div>
+            <div>Правильных ответов: <span id="rightCount"></span></div>
+        </div>
+
+        <script defer src="./script.js"></script>
+    </body>
+</html>
